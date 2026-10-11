@@ -3,7 +3,10 @@ document.querySelector('.message') .textContent = 'start guesing';
 document.querySelector('.score').textContent = 25;
 
 
-const number = (randomNUmber){
-    document.querySelector('.number').textContent
-}
+let number = Math.trunc(Math.random()*20)+1
 
+document.querySelector('.number').textContent = number;
+
+document.querySelector('check').addEventListener('click',function(){
+    console.log("click")
+))
