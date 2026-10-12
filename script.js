@@ -8,14 +8,14 @@ let number = Math.trunc(Math.random()*20)+1
 let score = 20;
 let highscore = 0;
 
-document.querySelector('.number').textContent = number;
+// document.querySelector('.number').textContent = number;
 
 
   document.querySelector('.check').addEventListener('click',function(){
    const guess = Number(document.querySelector('.guess').value );
   console.log(guess,typeof guess)
 
-
+// console.log("Secret Number is:", number);
 
 if(!guess){
   console.log("Please enter a number")
@@ -72,7 +72,8 @@ document.querySelector('.again').addEventListener('click',function(){
   document.querySelector('.message').textContent = "Start guesing..."
   document.querySelector('.guess').value = "";                     
 number = Math.trunc(Math.random()*20)+1
-document.querySelector('.number').textContent = number;
+
+// document.querySelector('.number').textContent = number;
  document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
 })
