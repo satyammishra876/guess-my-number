@@ -118,9 +118,9 @@ h1 {
   margin-bottom: 2rem;
 }
 
-/* --- UNIVERSAL MOBILE RESPONSIVENESS --- */
+
 @media (max-width: 768px) {
-  /* Fix 1: Upar ke buttons ko sahi jagah par laane ke liye */
+  
   .again {
     top: 1rem;
     left: 1rem;
@@ -134,17 +134,17 @@ h1 {
     font-size: 1.2rem;
   }
   
-  /* Fix 2: Heading ko thoda niche push karne ke liye taaki buttons se na takraye */
+
   h1 {
     font-size: 2.2rem;
     padding-top: 4rem; 
   }
   
-  /* Fix 3: SABSE ZAROORI - Input aur Check button ko Number box ke niche dhakelne ke liye */
+
   main {
     flex-direction: column; 
     align-items: center;
-    margin-top: 8rem; /* Ye tumhare input box ko number (15) ke peeche se bahar nikalega */
+    margin-top: 8rem; 
     height: auto;
   }
   
