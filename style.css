@@ -58,7 +58,7 @@ h1 {
 
 .number {
   background: #eee;
-  color: #333;
+  color: red;
   font-size: 6rem;
   width: 15rem;
   padding: 3rem 0rem;
@@ -119,44 +119,53 @@ h1 {
 }
 
 
-@media (max-width: 768px) {
-  
-  .again {
-    top: 1rem;
-    left: 1rem;
-    padding: 0.8rem 1.2rem;
-    font-size: 1.2rem;
-  }
-  
-  .between {
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.2rem;
-  }
+@media (max-width: 480px) {
   
 
   h1 {
-    font-size: 2.2rem;
-    padding-top: 4rem; 
+    font-size: 2.5rem; 
   }
-  
+
+
+  .number {
+    width: 10rem;
+    font-size: 4rem;
+  }
+
 
   main {
-    flex-direction: column; 
-    align-items: center;
-    margin-top: 8rem; 
-    height: auto;
-  }
-  
-  .left, .right {
-    width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5rem; 
+    height: auto;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+
+
+  .guess {
+    width: 15rem;
+  }
+
+
+  .left, 
+  .right {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 2rem;
   }
   
-  .guess {
-    width: 14rem;
-    margin-bottom: 2rem;
+  main {
+    margin-top: 6rem;
   }
 }
