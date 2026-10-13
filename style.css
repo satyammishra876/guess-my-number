@@ -117,60 +117,66 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
-
 @media (max-width: 768px) {
-
+  /* Header ko safely arrange karein */
   header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding: 2rem 1rem;
-    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 6rem; /* Box ke liye space */
     border-bottom: 5px solid #eee;
   }
 
-
-  .between {
-    position: static;
-    font-size: 1.2rem;
-    order: -1; 
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
+  /* Top ke buttons aur text ko static karein taaki gayab na hon */
   .again {
     position: static;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 1rem 2rem;
     font-size: 1.4rem;
   }
 
-
-  h1 {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .number {
+  .between {
     position: static;
-    transform: none;
-    width: 9rem;
-    font-size: 3.5rem;
-    padding: 1.5rem 0;
-    margin: -4.5rem auto 2rem auto; 
-    background: #eee;
-    z-index: 10;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 
+  /* Title ka size set karein */
+  h1 {
+    position: static;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+  }
 
+  /* Box ko directly line ke center par set karein bina kisi overlap ke */
+  .number {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 8rem;
+    height: 8rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: #eee;
+  }
+
+  /* Main container ko box ke neechay se shuru karein */
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem;
+    margin-top: 6rem; /* Box ke neechay ki spacing */
     height: auto;
-    margin: 0;
+    padding: 0 1rem;
   }
 
   .left, .right {
@@ -180,28 +186,12 @@ h1 {
     align-items: center;
   }
 
-
   .guess {
     width: 12rem;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .btn.check {
     margin-bottom: 3rem;
-    padding: 1.2rem 2.5rem;
-    font-size: 1.6rem;
-  }
-
-
-  .message {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  .label-score {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
   }
 }
