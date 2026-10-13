@@ -118,78 +118,90 @@ h1 {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 600px) {
-  /* Header ko theek karna taaki button aur text overlap na hon */
+@media (max-width: 768px) {
+
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    padding: 1rem;
+    height: auto;
+    padding: 2rem 1rem;
+    position: relative;
+    border-bottom: 5px solid #eee;
   }
+
 
   .between {
+    position: static;
     font-size: 1.2rem;
-    position: static; /* Absolute positioning hatane ke liye */
-  }
-
-  /* Main Title chota karna */
-  h1 {
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    order: -1; 
+    margin-bottom: 1.5rem;
     text-align: center;
   }
 
-  /* '?' Wale box ka size theek karna */
+  .again {
+    position: static;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+
+
+  h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
   .number {
-    width: 8rem;
-    height: 8rem;
+    position: static;
+    transform: none;
+    width: 9rem;
     font-size: 3.5rem;
+    padding: 1.5rem 0;
+    margin: -4.5rem auto 2rem auto; 
+    background: #eee;
+    z-index: 10;
   }
 
-  /* Left aur Right sections ko ek ke neeche ek (stack) karna */
+
   main {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    height: auto;
-    padding: 2rem 1rem;
-  }
-
-  /* Input aur Check Button ka size mobile ke anusaar */
-  .left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding: 2rem 1rem;
+    height: auto;
+    margin: 0;
   }
+
+  .left, .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 
   .guess {
     width: 12rem;
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .btn {
-    font-size: 1.5rem;
-    padding: 1.2rem 2rem;
+  .btn.check {
+    margin-bottom: 3rem;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.6rem;
   }
 
-  /* Score aur Highscore text chota karna aur thoda upar shift karna */
-  .right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 4rem; /* Netlify badge ke liye jagah chhodna */
-  }
 
   .message {
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   .label-score {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
